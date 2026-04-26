@@ -1,4 +1,4 @@
-
+/* Sayfa Genel Ayarları */
 * {
     margin: 0;
     padding: 0;
@@ -6,27 +6,25 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
 }
 
-
+/* Üst Başlık */
 .top-header {
-    background-color: #ffffff;
-    padding: 40px 0;
+    background-color: #fff;
+    padding: 30px 0;
     text-align: center;
 }
 
 .top-header h1 {
-    color: #444;
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 28px;
+    color: #333;
 }
 
-
+/* Navigasyon */
 .navbar {
     background-color: #222;
-    border-bottom: 5px solid #3498db; 
+    border-bottom: 4px solid #3498db;
 }
 
 .navbar ul {
@@ -36,65 +34,60 @@ body {
 }
 
 .navbar ul li a {
-    display: block;
-    color: #999;
+    color: #bbb;
     text-decoration: none;
-    padding: 18px 25px;
-    font-size: 15px;
-    transition: 0.3s;
+    padding: 15px 20px;
+    display: inline-block;
 }
 
-.navbar ul li a:hover, .navbar ul li a.active {
+.navbar ul li a.active, .navbar ul li a:hover {
     color: #fff;
-    font-weight: bold;
 }
 
-
+/* Banner Alanı */
 .hero-section {
-    position: relative; 
+    position: relative; /* Yazıyı resmin üstüne bindirmek için şart */
     width: 100%;
-    line-height: 0; 
+    line-height: 0; /* Resmin altındaki boşluğu siler */
 }
 
 .banner-img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
-
+/* Resim Üzerindeki Siyah Bant */
 .hero-bottom-bar {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.85); 
-    padding: 20px 0;
-    line-height: normal; 
-}
-
-
-.hero-bottom-bar .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.8); /* Şeffaf siyah */
     color: #fff;
+    
+    /* Yazı ve butonu yan yana ve ortalı yapmak için: */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; /* Yazı ile buton arasındaki boşluk */
+    padding: 15px 0;
+    line-height: normal; /* Yazıların okunabilirliği için */
 }
 
 .hero-bottom-bar p {
+    margin: 0;
     font-size: 16px;
 }
 
-
+/* Buton */
 .btn-learn-more {
     background-color: #3498db;
     color: white;
+    padding: 10px 20px;
     text-decoration: none;
-    padding: 12px 30px;
-    border-radius: 5px;
+    border-radius: 4px;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-learn-more:hover {
