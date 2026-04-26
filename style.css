@@ -1,0 +1,31 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+nav a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    transition: 0.3s; /* Renk geçişi yumuşak olsun */
+}
+
+nav a:hover {
+    color: white;
+}
