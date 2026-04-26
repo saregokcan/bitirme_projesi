@@ -1,0 +1,81 @@
+
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+
+.top-title {
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.top-title h1 {
+    font-size: 24px;
+    color: #444;
+    font-weight: normal;
+}
+
+
+header {
+    background-color: #2e2e2e;
+    border-bottom: 4px solid #44a8da; 
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+    color: white; 
+}
+
+
+#banner {
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: flex-end; 
+}
+
+
+.banner-content {
+    background: rgba(0, 0, 0, 0.7); 
+    width: 100%;
+    padding: 20px 0;
+    color: white;
+}
+
+
+.text-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.btn-learn {
+    background-color: #44a8da;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-learn:hover {
+    background-color: #358bb5;
+}
